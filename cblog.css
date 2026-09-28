@@ -1,0 +1,143 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+
+
+
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfnABs1S4xkA4jPwDEMjlpNht-uKZLgf_Oq6HHYnJLtIMCP4QGOdtVqkc&s=10);
+    
+    background-size: cover;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading{
+    width: 70%;
+    height: 300px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    font-size: 48px;
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button{
+    width: 150px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: rgb(243, 95, 50);
+    font-size: medium;
+    font-weight: bold;
+}
+
+#top{
+    width: 95%;
+    
+    position: fixed;
+    top:0%;
+
+    margin : 20px;
+    padding:10px;
+    backdrop-filter: blur(8px);
+    border-radius: 50px;
+
+
+
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(82, 106, 190);
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    box-sizing: border-box;
+    font-size:large;
+    
+
+}
+
+#s{
+    width: 70px;
+    height: 35px;
+    border-radius: 12px;
+    background-color: gainsboro;
+
+    
+    
+    
+    
+}
+
+.sideleft{
+    flex: 1;
+}
+
+#bottom{
+    width: 50%;
+    height: 5px;
+    padding: 20px;
+    position: fixed;
+    bottom: 20px;
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+
+
+
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+#list{
+    text-decoration: none;
+    color: #141212;
+}
+
+.cont1 {
+    background-color: rgb(rgb(92, 86, 86) green blue / alpha);
+    
+
+    width: 80%;
+    height: 500px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    text-align: left;
+    font-weight:900;  
+    font-size: larger;
+    overflow: hidden;
+    overflow-y: auto;
+
+}
+
+.l{
+    position: left;
+}
+
+.top1{
+    position: absolute;
+    margin: 0;
+  
+   top: 20px;
+   left: 20px;
+
+    
+}

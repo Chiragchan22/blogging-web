@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+
+
+
+    background-image: url(https://media.istockphoto.com/id/1220167951/photo/womens-summer-straw-hat-wicker-bag-white-sundress-sunglasses-and-jewelry-on-a-beige.jpg?s=1024x1024&w=is&k=20&c=aP7lRLVpD3zD06qFSCKYwG9_wVAPLBUO-9S6s5DL8nw=);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#cont {
+    background-color: rgb(rgb(92, 86, 86) green blue / alpha);
+    
+
+    width: 500px;
+    height: 50px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+    font-style:normal;  
+
+}
+#login {
+    background-color: rgb(rgb(92, 86, 86) green blue / alpha);
+    
+
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+    font-style:normal; 
+    
+    display: flex;
+    border-radius: 12px;
+    flex-direction: column;
+    gap: 0.1px;
+
+}
+
+#input{
+    margin: auto;
+    padding: 2px;
+    border-radius: 10px;
+    flex-direction: column;
+    gap: 1px;
+}
+
+#button{
+    margin: auto;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: rgb(216, 198, 172);
+
+}
+
+#top{
+    width: 50%;
+    height: 5px;
+    padding: 20px;
+    position: fixed;
+    top: 10px;
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+
+
+
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+#list{
+    text-decoration: none;
+    color: #333;
+}
+
+#bottom{
+    width: 50%;
+    height: 5px;
+    padding: 20px;
+    position: fixed;
+    bottom: 20px;
+    backdrop-filter: blur(8px);
+    border-radius: 12px;
+
+
+
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}

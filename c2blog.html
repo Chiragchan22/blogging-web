@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="c2blog.css">
+    <title>Document</title>
+</head>
+<body>
+    <p><input type="text" placeholder=" TITLE :" id="title" class="tt"></p>
+    <textarea type="text" placeholder="   Write Your Blog :" id="text" class="ta"></textarea>
+    <button id="button" onclick="blog()" >Post</button>
+    <p class="l1">LATEST POST</p>
+    <div class="box">
+       <p id="view" class="list"></p>
+    </div>
+
+    <div id="bottom">
+    <a href="cblog.html" id="list" >Home</a>   
+    <a href="about.html " id="list">About Us</a>
+    <a href="contact.html" id="list">Contact Us</a>
+    <a href="signin.html" id="list" onclick="log()">Login</a>
+    <a href="term.html" id="list"> Term & Condition</a>
+    </div >
+    <script>
+        function blog(){
+        let t=document.getElementById("title").value;
+        let c=document.getElementById("text").value;
+        localStorage.setItem(t,c);
+        let v=localStorage.getItem(t);
+        document.getElementById("view").innerHTML = `<b>Title:</b> ${t} <br><b>Blog:</b> ${v}`;
+         if (!t || !c) {
+                alert("Please fill in both fields!");
+                return;
+            }
+
+        let blog=JSON.parse(localStorage.getItem("blog")) || [];
+
+        let newblog={
+            title : t,
+            content :c
+        };
+
+        blog.push(newblog);
+
+        localStorage.setItem("blog",JSON.stringify(blog));
+
+        document.getElementById("title").value = "";
+        document.getElementById("text").value = "";
+
+        displayblog();
+        
+        }
+
+        function displayblog(){
+            let Blog = JSON.parse(localStorage.getItem("blog")) || [];
+            let viewDiv = document.getElementById("view");
+
+            if (Blog.length === 0) {
+                viewDiv.innerHTML = "<p>No blogs yet.</p>";
+                return;
+            }
+            viewDiv.innerHTML = Blog.map(b => `
+                 <div class="bb">
+                     <b>${b.title}</b>
+                    <br>
+                   ${b.content}
+                     </div>
+                 
+            `).join('');
+        }
+        
+        
+    </script>
+</body>
+</html>

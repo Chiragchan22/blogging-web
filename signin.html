@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="sign.css">
+    <title>Document</title>
+</head>
+<body>
+    <p id="cont">FRESH FRAME</p>
+    <div id="bottom">   
+    <a href="cblog.html" id="list" >Home </a>
+    <a href="about.html " id="list">About Us</a>
+    <a href="contact.html" id="list">Contact Us</a>
+    <a href="signin.html" id="list" onclick="create()">Login</a>
+    
+    <a href="term.html" id="list"> Term & Condition</a>
+    </div >
+    <form id="login">
+        <h2>Login</h2>
+        <br>
+        <input type="username" id="input" placeholder="USERNAME" class="username">
+         
+         <input type="password" id="input" placeholder="password" class="password">
+         <br>
+         <button id="button" onclick="login()">Login</button>
+         
+    <script>
+        let username=document.getElementsByClassName("username").value
+        let password=document.getElementsByClassName("password").value
+        
+        function login(){
+            alert("succesfull");
+        }
+    </script>
+
+    </form>
+</body>
+</html>
